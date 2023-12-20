@@ -1,0 +1,107 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Rock+Salt&display=swap');
+:root{
+    --azulescuro: #003D76;
+    --azulescurohover: #001f3b;
+    --azulclaro: #0282D3;
+    --branco: #FFF;
+    --preto: #000;
+    --amarelo: #EBBC44;
+    --amarelohover: #cc9a1b;
+}
+
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--branco);
+    overflow-x: hidden;
+}
+
+a, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+#wpp{
+    z-index: 9999;
+    width: 55px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: opacity 0.3s;
+    transition: tranform 0.9s;
+}
+
+#wpp:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+
+
+.container-logo{
+    max-width: 2000px;
+}
+
+.container-logo #logo{
+    width: 200px;
+    margin: 10px;
+}
+
+.container-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.container-texto{
+    width: 500px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-texto #titulo h1{
+    font: 700 44px "Palanquin",sans-serif;
+    line-height: 40px;
+    width: 500px;
+    margin: 0;
+    color: var(--branco);
+}
+
+.container-texto #hashtag h1{
+    font: 400 36px "Rock Salt",cursive;
+    color: var(--azulclaro);
+    line-height: 40px;
+    margin: 20px 0;
+}
+
+.container-texto #desc h1{
+    font: 400 20px "Oxanium",sans-serif;
+    color: var(--branco);
+    width: 350px;
+    margin: 20px 0;
+}
+
+.botao a{
+    background-color: var(--amarelo);
+    color: var(--branco);
+    padding: 10px 40px;
+    font: 700 20px "Nunito Sans",sans-serif;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.botao a:hover{
+    background-color: var(--amarelohover);
+    transition: .3s;
+}
+
+.container-imagem img{
+    width: 500px;
+}
