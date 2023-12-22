@@ -2,46 +2,338 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/icons/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/icons/logo.ico">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1703964266748759');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1703964266748759&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- BIBLIOTECA PERSONALIZADA -->
+    <link 
+        rel="stylesheet" 
+        href="style.css">
+
+    <!-- BIBLIOTECA BOOTSTRAP -->
+    <link
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+    
+    <!-- BIBLIOTECA FONT AWESOME -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"/>
+
     <title>OzeinOxy</title>
 </head>
 <body>
-    <div id="wpp-icon">
-        <a href="#"><img id="wpp" src="images/icons/WhatsApp.png"></a>
+
+    <div class="wpp-icon">
+        <a href="#"><img class="z-3" id="wpp" src="images/icons/WhatsApp.png" width="55px"></a>
     </div>
-    <header class="header">
-        <div class="container-logo">
-            <a href="index.html"><img id="logo" src="images/icons/LogoBranca.png" alt="logo"></a>
-        </div>
-    </header>
+
     <section class="banner">
-        <div class="container-banner">
-            <div class="container-texto">
-                <div id="titulo">
-                    <h1>Mais do que produtos, um estilo de vida!</h1>
+
+        <header class="header container">
+                <a href="index.html"><img class="img-fluid m-4" src="images/icons/LogoBranca.png" width="200px"></a>
+        </header>
+
+        <div class="container-banner container d-flex align-items-center">
+            <div class="container-txt-banner col-5">
+                <div class="titulobranco">
+                    <h1 class="m-0">Mais do que produtos, um estilo de vida!</h1>
                 </div>
                 <div id="hashtag">
-                    <h1>#amor em sachê</h1>
+                    <h1 class="mt-3">#amor em sachê</h1>
                 </div>
-                <div id="desc">
-                    <h1>Escolha viver de forma mais saudável, tomando apenas dois sachês por dia.</h1>
+                <div class="descbranco">
+                    <h1 class="m-0 mb-4" style="width: 350px;">Escolha viver de forma mais saudável, tomando apenas dois sachês por dia.</h1>
                 </div>
-                <div class="botao">
-                    <a href="#">Quero viver saudável!</a>
+                <div class="botaoamarelo">
+                    <a class="rounded-pill" href="#">Quero viver saudável!</a>
                 </div>
             </div>
-            <div class="container-imagem">
-                <img src="images/produtos/prod-banner.png">
+            <div class="container-img-banner col-5">
+                <img class="img-fluid" src="images/produtos/prod-banner.png" width="500">
             </div>
         </div>
+    </section>
 
-        </section>
+    <section class="produto my-5">
+        <div class="container-produto my-4 container d-flex align-items-center">
+            <div class="container-img-produto col-5">
+                <img class="img-fluid" src="images/produtos/produto.png" width="500px">
+            </div>
+            <div class="container-txt-produto col-5">
+                <div class="titulo">
+                    <h1 class="m-0" style="width: 480px;">O melhor aliado para sua saúde e bem-estar!</h1>
+                </div>
+                <div class="desc justify">
+                    <h1 class="my-4" style="width: 580px;">Já pensou em melhorar o seu dia com uma deliciosa xícara de chá? Agora você pode! O Levimune veio para ser seu companheiro do dia a dia, com ele você tem poderosos ingredientes combinados para melhorar sua saúde e promover seu bem-estar, na praticidade de uma xícara de chá.</h1>
+                </div>
+                <div class="botaoamarelo">
+                    <a class="rounded-pill" href="#">Quero experimentar!</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/a2edaa36f8.js" crossorigin="anonymous"></script>
+    <section class="beneficios my-5">
+        <div class="container-txt-bene text-center">
+            <div class="titulo">
+                <h1>Conheça os benefícios da OzeinOxy</h1>
+            </div>
+            <div class="desc">
+                <h1>OzeinOxy faz parte de uma vida saudável. Experimente e ame!</h1>
+            </div>
+        </div>
+        
+        <div class="container text-center col-12">
+            <div class="row">
+                <div class="col"></div>
+                <div class="grid col">
+                    <div class="container-grid my-5">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/fire 1.png">
+                        <h1 style="width: 120px;">Queima de gordura</h1>
+                    </div>
+                </div>
+                <div class="grid col">
+                    <div class="container-grid my-5">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/weight-loss 1.png">
+                        <h1 style="width: 120px;">Efeito termogênico</h1>
+                    </div>
+                </div>
+                <div class="grid col">
+                    <div class="container-grid my-5">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/energy 1.png">
+                        <h1 style="width: 120px;">Mais energia</h1>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="grid col">
+                    <div class="container-grid my-5">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/smiling 1.png">
+                        <h1 style="width: 120px;">Ação calmante</h1>
+                    </div>
+                </div>
+                <div class="grid col">
+                    <div class="container-grid my-5">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/no-food 1.png">
+                        <h1 style="width: 120px;">Previne a ansiedade</h1>
+                    </div>
+                </div>
+                <div class="grid col">
+                    <div class="container-grid my-5">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/leaf 1.png">
+                        <h1 style="width: 120px;">Totalmente natural</h1>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vendas my-5">
+        <div class="container-txt-vendas text-center">
+            <div class="titulo">
+                <h1>Adquira já seu produto OzeinOxy</h1>
+            </div>
+            <div class="desc">
+                <h1>Aproveite! Preços com desconto especial por tempo limitado!</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col">
+                    <div class="card-box text-center rounded-3" style="width: 20rem;">
+                        <div class="title-card">
+                            <h1 class="rounded-top mt">EXPERIMENTE</h1>
+                        </div>
+                        <div class="img-card my-2">
+                            <img class="img-fluid" src="images/produtos/Modelo - 1.png" width="200px">
+                        </div>
+                        <div class="mx-1 text-center container-grid"><h1 class="mb-3">CÁPSULA SOFTGEL OZEINOXY</h1></div>
+                        <div class="precototal text-center"><p class="mb-1">POR APENAS</p><h3 class="">R$197,00</h3></div>
+                        <div class="divisoria "><p class="d-flex text-center"><span class="divisor"></span> OU <span class="divisor"></span></p></div>
+                        <div class="precototal text-center"><p class="mb-1">EM ATÉ 12x DE</p><h1 class=""><span class="sifrao">R$</span>19,96</h1></div>
+                        <div class="botaocompra my-4"><a href="#" class="rounded">SAIBA MAIS</a></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-box text-center rounded-3" style="width: 20rem;">
+                        <div class="title-card">
+                            <h1 class="rounded-top mt">EXPERIMENTE</h1>
+                        </div>
+                        <div class="img-card my-2">
+                            <img class="img-fluid" src="images/produtos/Modelo - 1.png" width="200px">
+                        </div>
+                        <div class="mx-1 text-center container-grid"><h1 class="mb-3">CÁPSULA SOFTGEL OZEINOXY</h1></div>
+                        <div class="precototal text-center"><p class="mb-1">POR APENAS</p><h3 class="">R$197,00</h3></div>
+                        <div class="divisoria "><p class="d-flex text-center"><span class="divisor"></span> OU <span class="divisor"></span></p></div>
+                        <div class="precototal text-center"><p class="mb-1">EM ATÉ 12x DE</p><h1 class=""><span class="sifrao">R$</span>19,96</h1></div>
+                        <div class="botaocompra my-4"><a href="#" class="rounded">SAIBA MAIS</a></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-box text-center rounded-3" style="width: 20rem;">
+                        <div class="title-card">
+                            <h1 class="rounded-top mt">EXPERIMENTE</h1>
+                        </div>
+                        <div class="img-card my-2">
+                            <img class="img-fluid" src="images/produtos/Modelo - 1.png" width="200px">
+                        </div>
+                        <div class="mx-1 text-center container-grid"><h1 class="mb-3">CÁPSULA SOFTGEL OZEINOXY</h1></div>
+                        <div class="precototal text-center"><p class="mb-1">POR APENAS</p><h3 class="">R$197,00</h3></div>
+                        <div class="divisoria "><p class="d-flex text-center"><span class="divisor"></span> OU <span class="divisor"></span></p></div>
+                        <div class="precototal text-center"><p class="mb-1">EM ATÉ 12x DE</p><h1 class=""><span class="sifrao">R$</span>19,96</h1></div>
+                        <div class="botaocompra my-4"><a href="#" class="rounded">SAIBA MAIS</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="seguro" style="background-color: var(--azulescuro); height: 500px;">
+        
+    </section>
+
+    <section class="perguntas my-5">
+        <div class="container-txt-perguntas text-center">
+            <div class="titulo">
+                <h1>Perguntas Frequentes</h1>
+            </div>
+        </div>
+        <div class="container row my-5 ">
+            <div class="col-5">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                O que são as Cápsulas OzeinOxy?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Como usar as Cápsulas OzeinOxy?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Basta escolher um horário que se sinta melhor. Ao iniciar seu dia, durante sua rotina ou pela noite antes de adormecer. Recomendado o uso de 2 cápsulas ao dia                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Quanto tempo demora para chegar?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Depende da região em que você mora, mas em média de 4 a 20 dias úteis.                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Tenho que usar as Cápsulas OzeinOxy para sempre?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Não é totalmente necessário, mas o ideal é que sim, caso você queira sempre estar protegido deve fazer o uso contínuo do produto.                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-5">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseOneFive">
+                                Quais são os benefícios do uso contínuo?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                Possui algum efeito colateral?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Por ser completamente natural, as Cápsulas OzeinOxy não possuem nenhum tipo de efeito colateral
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                Qualquer um pode tomar?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                    Contraindicado para gestantes, pessoas com Anemia Falciforme e pessoas com deficiência relacionada à enzima G6PD. (Fazer teste G6PD antes de consumir)
+                                    <br>Pessoas com histórico de problemas controlados, anemias, pós-bariátricos e que tiveram resultado positivo para o exame G6PD devem procurar orientação de seu médico para uso do produto. 
+                                    <br>a<br>Não consuma o produto com alimentos e lácteos fermentados (bebidas probióticas). Exemplos: Kefir, kombucha, yakult.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- FONT AWESOME JS -->
+    <script 
+        src="https://kit.fontawesome.com/a2edaa36f8.js"
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>
