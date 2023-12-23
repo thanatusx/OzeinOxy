@@ -156,10 +156,6 @@ body a{
     color: var(--preto);
 }
 
-.descmobile h1{
-    font-size: 19px;
-}
-
 .btnmobile a{
     font-size: 25px;
     padding: 10px 55px;
