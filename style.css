@@ -45,7 +45,7 @@ body a{
 }
 
 .banner{
-    background: url(images/banner/fundo.jpg);
+    background: url(images/banner/Banner.png);
     background-size: cover;
 }
 
@@ -135,7 +135,7 @@ body a{
 }
 
 .divisor{
-    width: 100px;
+    width: 200px;
     height: 1px;
     background-color: var(--preto);
     margin: auto 20px;
@@ -143,5 +143,15 @@ body a{
 
 .divisoria p{
     font: 400 16px/30px "Oxanium",sans-serif;
+    color: var(--preto);
+}
+
+.accordion-button h1{
+    font: 700 18px/30px "Nunito Sans",sans-serif;
+    color: var(--preto);
+}
+
+.accordion-body p{
+    font: 500 16px/30px "Oxanium",sans-serif;
     color: var(--preto);
 }
