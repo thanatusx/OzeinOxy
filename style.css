@@ -44,10 +44,10 @@ body a{
     transition: .2s;
 }
 
-/* .banner{
-    background: url(images/banner/banner.webp);
+.banner{
+    background: url(images/banner/banner.png);
     background-size: cover;
-} */
+}
 
 .subtitulo h1{
     font: 700 36px/40px "Nunito sans", sans-serif;
