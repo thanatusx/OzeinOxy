@@ -45,12 +45,12 @@ body a{
 }
 
 .banner{
-    background: url(images/banner/Banner.png);
+    background: url(images/banner/banner.webp);
     background-size: cover;
 }
 
-#hashtag h1{
-    font: 400 36px/40px "Rock Salt",cursive;
+.subtitulo h1{
+    font: 700 36px/40px "Nunito sans", sans-serif;
     color: var(--azulescuro);
 }
 
@@ -154,4 +154,13 @@ body a{
 .accordion-body p{
     font: 500 16px/30px "Oxanium",sans-serif;
     color: var(--preto);
+}
+
+.descmobile h1{
+    font-size: 19px;
+}
+
+.btnmobile a{
+    font-size: 25px;
+    padding: 10px 55px;
 }
