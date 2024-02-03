@@ -28,6 +28,12 @@ body a{
     text-decoration: none;
 }
 
+video{
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px var(--azulescuro);
+
+}
+
 .justify{
     text-align: justify;
 }
@@ -36,8 +42,8 @@ body a{
     position: fixed;
     right: 20px;
     bottom: 20px;
-    transition: opacity 0.3s;
-    transition: tranform 0.9s;
+    transition: opacity .3s;
+    transition: tranform .9s;
 }
 
 #wpp:hover {
@@ -47,7 +53,7 @@ body a{
 }
 
 .banner{
-    background: url(images/banner/banner.png);
+    background: url(images/banner/banner.webp);
     background-size: cover;
 }
 
@@ -81,6 +87,7 @@ body a{
     color: var(--branco);
     background-color: var(--amarelo);
     padding: 10px 40px;
+    box-shadow: 1px 1px 5px var(--cinzaescuro);
 }
 
 .botaoamarelo a:hover{
@@ -93,6 +100,7 @@ body a{
     color: var(--branco);
     background-color: var(--azulclaro);
     padding: 10px 40px;
+    box-shadow: 1px 1px 5px var(--cinzaescuro);
 }
 
 .botaocompra a:hover{
@@ -100,15 +108,40 @@ body a{
     transition: .3s;
 }
 
+.grid-relatos{
+    padding: 15px 0 0 0;
+}
+
+.grid-relatos-mobile{
+    padding: 10px 0 0 0;
+}
+
+.img-print{
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.img-print-mobile{
+    width: 190px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.txt-video h1{
+    font: 400 24px "Oxanium",sans-serif;
+    color: var(--branco);
+}
+
 .container-grid h1{
     font: 600 20px "Oxanium",sans-serif;
     color: var(--preto);
 }
 
-
 .card-box{
     border: 3px solid var(--cinza);
     background-color: var(--branco);
+    box-shadow: 1px 1px 5px var(--cinzaescuro);
 }
 
 .title-card h1{
@@ -189,6 +222,6 @@ body a{
 }
 
 .direitos a:hover{
-    color: var(--amarelo);
+    color: var(--amarelohover);
     transition: .2s;
 }
