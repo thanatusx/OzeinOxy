@@ -55,6 +55,7 @@ video{
 .banner{
     background: url(images/banner/banner.webp);
     background-size: cover;
+    background-color: var(--azulclaro);
 }
 
 .subtitulo h1{
