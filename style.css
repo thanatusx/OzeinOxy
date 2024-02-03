@@ -6,10 +6,16 @@
     --branco: #FFF;
     --cinza: #D9D9D9;
     --cinzaclaro: #e9e8e8;
+    --cinzahover: #bdbcbc;
     --cinzaescuro: #727272;
-    --preto: #000;
-    --amarelo: #EBBC44;
+    --preto: #000000;
+    --amarelo: #e9bb24;
     --amarelohover: #c07910;
+    --yellow: #f3cf00;
+    --orange: #fa7a30;
+    --pink: #fc4985;
+    --purple: #8e02b1;
+    --lightblue: #0077d8;
 }
 
 *{
@@ -28,7 +34,7 @@ body a{
     text-decoration: none;
 }
 
-video{
+iframe{
     border-radius: 5px;
     box-shadow: 5px 5px 10px var(--azulescuro);
 
@@ -207,18 +213,43 @@ video{
     color: var(--preto);
 }
 
-.rodape-txt h1{
-    font: 700 16px/30px "Rubik", sans-serif;
+.rainbow{
+    height: 6px;
+    background: linear-gradient(to right, var(--yellow), var(--orange), var(--pink), var(--purple), var(--lightblue));
+}
+
+
+.contato h1{
+    font: 700 18px/25px "Rubik", sans-serif;
     color: var(--branco);
 }
 
+.contato .titulo{
+    font: 700 32px/30px "Rubik", sans-serif;
+}
+
+.redes .titulo{
+    font: 700 32px/30px "Rubik", sans-serif;
+    color: var(--branco);
+}
+
+.redes a{
+    font: 600 18px/30px "Rubik", sans-serif;
+    color: var(--branco);
+}
+
+.redes a:hover{
+    color: var(--cinzahover);
+    transition: .2s;
+}
+
 .direitos h1{
-    font: 400 12px/20px "Rubik", sans-serif;
+    font: 400 14px/20px "Rubik", sans-serif;
     color: var(--branco);
 }
 
 .direitos a{
-    font: 400 12px/20px "Rubik", sans-serif;
+    font: 400 14px/20px "Rubik", sans-serif;
     color: var(--branco);
 }
 
